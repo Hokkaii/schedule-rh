@@ -2,7 +2,10 @@ import { OpenAI } from 'openai';
 import { dailyKnowledgeBase } from './knowledge.js';
 
 // 初始化 OpenAI（请确保环境变量 OPENAI_API_KEY 已设置）
-const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
+const openai = new OpenAI({
+  baseURL: 'https://api.deepseek.com',
+  apiKey: process.env.OPENAI_API_KEY,
+});
 
 // 随机抽取知识库任务
 function getRandomTasks(arr, n) {
