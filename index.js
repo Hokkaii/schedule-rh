@@ -63,7 +63,7 @@ async function runTask () {
     // 4. 提交日志
     // 获取北京时间今日日期（格式：YYYY-MM-DD）
     const log_params = {
-      log_date,
+      showDate: log_date,
       workStatus: 0,
       content: aiContent,
       workStatusa: 0,
@@ -100,7 +100,7 @@ async function runTask () {
       signTime: clock_date,
       remark: aiContent,
     };
-    console.log('打卡参数:', clock_params);
+    console.log ('打卡参数:', clock_params);
     const clock_headers = buildHeaders ({
       token,
       tenantId,
