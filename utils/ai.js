@@ -31,7 +31,7 @@ export async function genAiContent() {
         {
           role: 'system',
           content:
-            '你是一个专业前端开发工程师，善于生成日报，能够将技术任务内容提炼成简洁的日报。',
+            '你是一个专业的软件开发工程师且善于生成日报，能够将技术任务内容提炼成简洁的日报。',
         },
         { role: 'user', content: aiPrompt },
       ],
