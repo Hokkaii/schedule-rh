@@ -41,6 +41,7 @@ async function runTask () {
       type: 1,
       date: log_date,
     };
+    console.log ('查询日志参数:', log_data_params);
     const log_data_headers = buildHeaders ({
       token,
       tenantId,
@@ -70,6 +71,7 @@ async function runTask () {
       logType: 1,
       logStatus: 1,
     };
+    console.log ('提交日志参数:', log_params);
     const log_headers = buildHeaders ({
       token,
       tenantId,
@@ -98,6 +100,7 @@ async function runTask () {
       signTime: clock_date,
       remark: aiContent,
     };
+    console.log('打卡参数:', clock_params);
     const clock_headers = buildHeaders ({
       token,
       tenantId,
