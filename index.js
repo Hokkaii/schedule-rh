@@ -71,7 +71,7 @@ async function runTask () {
       logType: 1,
       logStatus: 1,
     };
-    console.log ('提交日志参数:', log_params);
+    console.log ('新增日志参数:', log_params);
     const log_headers = buildHeaders ({
       token,
       tenantId,
@@ -83,6 +83,7 @@ async function runTask () {
       ...log_params,
       // 如果已有日志则带上id进行更新，否则新增
     };
+    console.log ('提交日志参数:', log_params);
     const addRes = await submitWorkLog (cur_log_params, log_headers);
     if (addRes && addRes.success) {
       console.log ('填写日志任务执行成功，返回结果:', addRes);
