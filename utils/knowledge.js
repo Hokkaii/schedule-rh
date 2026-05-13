@@ -1,6 +1,6 @@
 // 日报知识库，可根据实际需求扩展
 export const dailyKnowledgeBase = [
-  'openclaw调研'
+  'openclaw调研',
   '破产管理系统',
   '权限问题修复',
   '电子档案问题修复',
@@ -17,6 +17,6 @@ export const dailyKnowledgeBase = [
   'ai工具调研',
   '公司数据分析项目调研',
   'OA系统问题修复',
-  '表单方案调研'
+  '表单方案调研',
   '低版本安卓机型适配'
 ];
