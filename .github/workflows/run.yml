@@ -3,7 +3,7 @@ name: Run Schedule RH
 on:
   workflow_dispatch: # 允许手动触发
   schedule:
-   - cron: '00 10 * * 1-6'  # UTC 10:30 = 周一到周六北京时间 18:00
+   - cron: '50 09 * * 1-6'  # UTC 09:50 = 周一到周六北京时间 17:50
 jobs:
   run-task:
     runs-on: ubuntu-latest
