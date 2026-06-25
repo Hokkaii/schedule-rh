@@ -91,8 +91,10 @@ async function runTask () {
       console.error ('填写日志任务执行失败，返回结果:', addRes);
     }
 
-    // 5. 打卡
-    const clock_date = beijingNow.format ('YYYY-MM-DD HH:mm:ss');
+    // 5. 打卡 — 固定为北京时间当日 18 点的某个随机时间点
+    const randomMinute = Math.floor (Math.random () * 60);
+    const randomSecond = Math.floor (Math.random () * 60);
+    const clock_date = dayjs (log_date + ` 18:${String (randomMinute).padStart (2, '0')}:${String (randomSecond).padStart (2, '0')}`).format ('YYYY-MM-DD HH:mm:ss');
     const clock_params = {
       lat: '33.35766303168403',
       lng: '120.134970703125',
