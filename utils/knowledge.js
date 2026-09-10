@@ -17,5 +17,7 @@ export const dailyKnowledgeBase = [
   '移动端问题解决',
   'MCP研究',
   'SKILLS开发',
-  'MCP开发'
+  'MCP开发',
+  "重点任务业务开发",
+  "南京日报开发"
 ];
