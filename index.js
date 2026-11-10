@@ -90,7 +90,7 @@ async function runTask () {
     } else {
       console.error ('填写日志任务执行失败，返回结果:', addRes);
     }
-
+    return;
     // 5. 打卡 — 固定为北京时间当日 18 点的某个随机时间点
     const randomMinute = Math.floor (Math.random () * 60);
     const randomSecond = Math.floor (Math.random () * 60);
